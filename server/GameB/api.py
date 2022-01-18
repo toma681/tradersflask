@@ -1,11 +1,9 @@
 import enum
 from flask import Flask, json, request, jsonify, session, Response, Blueprint
 from .game import Game
+from app import cache
 from collections import OrderedDict
 import sys
-
-from .cache import cache
-from .cache_api import cache as user_cache
 
 gameB_api = Blueprint('gameB_api', __name__)
 

@@ -1,5 +1,6 @@
 from flask import Flask, json, request, jsonify, session, Response, render_template
 from flask_cors import CORS
+from flask_cacheify import init_cacheify
 import sys
 
 from server.users.cache import cache as users_cache
@@ -11,9 +12,11 @@ from server.GameA.api import gameA_api
 
 app = Flask(__name__)
 CORS(app)
-users_cache.init_app(app)
-gameB_cache.init_app(app)
-gameA_cache.init_app(app)
+# users_cache.init_app(app)
+# gameB_cache.init_app(app)
+# gameA_cache.init_app(app)
+
+cache = init_cacheify(app)
 
 app.register_blueprint(users_api, url_prefix='/users')
 app.register_blueprint(gameA_api, url_prefix='/GameA')
