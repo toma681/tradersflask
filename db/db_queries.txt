@@ -1,0 +1,1 @@
+CREATE TABLE gameBInfo(gameID INT, p1_ID TEXT, p1_truePNL INT, p2_ID TEXT, p2_truePNL INT, p3_ID TEXT, p3_truePNL INT, p4_ID TEXT, p4_truePNL INT, p5_ID TEXT, p5_truePNL INT, p6_ID TEXT, p6_truePNL INT, p7_ID TEXT, p7_truePNL INT, p8_ID TEXT, p8_truePNL INT, p9_ID TEXT, p9_truePNL INT, p10_ID TEXT, p10_truePNL INT);

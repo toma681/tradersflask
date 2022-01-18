@@ -1,0 +1,27 @@
+.bg {
+	background-image: -webkit-linear-gradient(
+			top,
+			rgba(0, 0, 0, 0.5),
+			rgba(0, 0, 0, 0.5)
+		),
+		url(https://traders.berkeley.edu//images/banner.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.button {
+	width: 47.5%;
+}
+
+.sponsor {
+	height: 3rem;
+}
+
+.sig {
+	height: 3.5rem;
+	margin-right: 3rem;
+}
+
+.optiver {
+	margin-right: 3rem;
+}
